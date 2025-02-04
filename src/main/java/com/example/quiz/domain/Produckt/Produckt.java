@@ -1,4 +1,4 @@
-package com.example.quiz.domain;
+package com.example.quiz.domain.Produckt;
 
 import jakarta.persistence.*;
 import lombok.Data;
@@ -12,6 +12,12 @@ public class Produckt {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(nullable = false)
     private String name; // Название товара
+
+    @Column(nullable = false)
     private double price; // Цена товара
+
+    @Column(nullable = false)
+    private int quantity;
 }

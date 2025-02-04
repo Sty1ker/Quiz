@@ -4,8 +4,8 @@ import com.example.quiz.web.dto.Rating.RaitingDto;
 import org.mapstruct.Mapper;
 
 @Mapper (componentModel = "spring")
-public interface Rating {
-    RaitingDto toDTO(Rating rating);
+public interface RatingMapper {
+    RaitingDto toDTO(RatingMapper rating);
 
-    Rating toEntity(RaitingDto dto);
+    RatingMapper toEntity(RaitingDto dto);
 }
